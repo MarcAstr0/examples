@@ -46,7 +46,6 @@ export const GET_QUESTIONS = gql`
       questioner
       text
       likes
-      createdAt
     }
   }
 `;
