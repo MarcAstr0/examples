@@ -4,7 +4,7 @@ export type Question = {
   questioner: string
   text: string
   likes: number
-  createdAt: string
+  askedOn: string
 }
 
 export const countLikes = (questions: Question[]) => {
