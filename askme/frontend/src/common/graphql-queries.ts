@@ -7,11 +7,10 @@ export const CREATE_CONFERENCE = gql`
 `;
 
 export const GET_CONFERENCE = gql`
-  query ConferenceReadModel($id: ID!) {
+  query ConferenceReadModel($id: String) {
     ConferenceReadModel(id: $id) {
       id 
       location 
-      questions 
     }
   }
 `;
@@ -26,7 +25,7 @@ export const GET_CONFERENCES = gql`
 `;
 
 export const CREATE_QUESTION = gql`
-  mutation Ask($who: String, $question: String, $conference: ID!) {
+  mutation Ask($who: String, $question: String, $conference: String) {
     Ask(input:  { who: $who, question: $question, conference: $conference })
   }
 `;
