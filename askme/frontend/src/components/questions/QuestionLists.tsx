@@ -72,7 +72,7 @@ const QuestionItem = forwardRef((props: QuestionItemProps, ref: ForwardedRef<HTM
               {question.questioner}
             </Typography>
             <Typography color='textSecondary' className={classes.postedAt}>
-              {moment(question.createdAt).fromNow()}
+              {moment(question.askedOn).fromNow()}
             </Typography>
           </Box>
           <Box paddingRight={2} display='flex' flexDirection='column' justifyContent='center' alignItems='center'>
